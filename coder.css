@@ -1,38 +1,104 @@
+body{
+	font-family: Verdana;
+}
 header{
-				background-color: #B2D135;
-				width: 100%;
-				height: 120px;
-				color:black;
-			}
-			#imgCoder{
-				margin-top: 10px;
-				margin-left: 10px;
-				float: left;
-				width:370px;
-				height:100px;
-			}
-			#topmenu{
-				margin: 0 auto;
-				width:440px;
- 				padding-top:58px;
-			}
+	background-color: #B2D135;
+	width: 100%;
+	height: 120px;
+	color:black;
+}
 
-			#topmenu ul{
-				margin:30px;
-				padding: 0;
-			}
-		    #topmenu ul {
- 				border:1px solid grey;
- 				border-radius:5px;
- 				height:30px;
- 			}
+#imgCoder{
+	margin-top: 10px;
+	margin-left: 10px;
+	float: left;
+	width:370px;
+	height:100px;
+}
+#topmenu{
+	margin: 0 auto;
+	width:450px;
+	padding-top:58px;
+}
 
-			#topmenu li{
-				list-style: none;
-				font-weight: bold;
-				font-size: 1.5em;
-			    border-right: 1px solid grey;
-				padding: 3px 20px 7px 20px;
-				float: left;
-				height:20px;
-			}
+#topmenu ul{
+	margin:30px;
+	padding: 0;
+	border:1px solid gray;
+	border-radius:5px;
+	height:30px;
+}
+
+#topmenu li{
+	list-style: none;
+	font-weight: bold;
+	font-size: 1.3em;
+    border-right: 1px solid gray;
+	padding: 3px 20px 7px 20px;
+	color:black;
+	float: left;
+	height:20px;
+}
+
+#runButton{
+	float: right;
+	padding-top:80px;
+	padding-right: 80px 
+}
+
+#run{
+	padding: 6px 9px;
+	background-color: #9BB530;
+	color:black;
+	font-size: 1.0em;
+	font-weight: bold;
+	border: 1px solid gray;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px #999;
+	text-shadow:  0.5px -0.8px 0.5px  #B2D135;
+}
+
+.break{
+	clear: both;
+}
+
+.codeContainer{
+	width: 50%;
+	float: left;
+	position: relative;
+	border-bottom: 1px solid red;
+}
+
+#jsContainer, #cssContainer{
+	display: none;
+}
+
+textarea{
+	margin-top: 25px;
+	margin-left: 10px;
+	width: 100%;
+	resize:none;
+	border: none;
+	border-left: 1px solid #B2D135;
+	font-size: 1em;
+}
+
+#result{
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-left: 1px solid #B2D135;
+}
+
+.tittleArea{
+	position:absolute;
+		right:20px;
+		top:10px;
+	color:#B2D135;
+	text-shadow:  0.5px -0.8px 0.5px  black;
+	font-weight: bold;
+}
+
+.resultContainer{
+	height: 100%;
+}

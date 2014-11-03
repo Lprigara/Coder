@@ -9,27 +9,48 @@
 		<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
 		<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 		<link rel="StyleSheet" href="coder.css" type="text/css">
+		<script languaje="text/javascript" src="coder.js"></script>
 	</head>
-	
 	<body>
-		<div id="container">
-			<header>
-				<div class="fixedwidth">
-					
-					<div id="logo">
-						<img id="imgCoder" src="coder.jpg" >
-					</div>
+		<header>					
+			<div id="logo">
+				<img id="imgCoder" src="coder.jpg" >
+			</div>
 
-					<div id="topmenu">
-						<ul>
-							<li>HTML</li>
-							<li>CSS</li>
-							<li>JS</li>
-							<li style="border-right:none">Result</li>
-						</ul>
-					</div>
-				</div>
-			</header>
+			<div id="runButton">
+	 				<button id="run">Run</button>	 	
+			</div>
+			
+			<div id="topmenu">
+				<ul>
+					<li>HTML</li>
+					<li>CSS</li>
+					<li>JS</li>
+					<li style="border-right:none">Result</li>
+				</ul>
+			</div>
+			
+		</header>
+
+		<div class="break"></div>
+
+		<div class="codeContainer" id="htmlContainer">
+			<span class="tittleArea">HTML</span>
+			<textarea id="html" style="border:none">sdfdfs</textarea>
 		</div>
+		<div class="codeContainer" id="cssContainer">
+			<span class="tittleArea">CSS</span>
+			<textarea id="css">fdadsa</textarea>
+		</div>	
+		<div class="codeContainer" id="jsContainer">
+			<span class="tittleArea">JS</span>
+			<textarea id="js">hfasdz</textarea>
+		</div>	
+		<div class="codeContainer" id="resultContainer">
+			<span class="tittleArea">Result</span>
+			<div id="resultContainer">
+				<iframe id="result"></iframe>
+			</div>
+		</div>		
 	</body>
 </html>
