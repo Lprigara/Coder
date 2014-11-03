@@ -1,4 +1,10 @@
+$(document).ready(init);
 
-	$(".codeContainer").css("height","400px");
+function changeHeight(){
+	var windowHeight=$(window).height()-160;
+	$(".codeContainer").css("height", windowHeight+"px");
+}
 
-
+function init(){
+	changeHeight();
+}
