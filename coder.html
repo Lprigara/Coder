@@ -5,9 +5,8 @@
  		<meta charset="utf-8" />
  		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<script languaje="Javascript" type="text/javascript" src="coder.js"></script>
-		
 		<link rel="StyleSheet" href="coder.css" type="text/css">
 	</head>
 	<body>
@@ -22,34 +21,38 @@
 			
 			<div id="topmenu">
 				<ul>
-					<li class="optionTopMenu selected">HTML</li>
-					<li class="optionTopMenu">CSS</li>
-					<li class="optionTopMenu">JS</li>
-					<li class="optionTopMenu selected" style="border-right:none" >Result</li>
+					<li name="html" class="optionTopMenu pressed">HTML</li>
+					<li name="css" class="optionTopMenu">CSS</li>
+					<li name="js" class="optionTopMenu">JS</li>
+					<li name="result" class="optionTopMenu pressed" style="border-right:none" >Result</li>
 				</ul>
 			</div>
 			
 		</header>
 
-		<div class="clear"></div>
-
 		<div class="codeContainer" id="htmlContainer">
 			<span class="tittleArea">HTML</span>
-			<textarea id="html">sdfdfs</textarea>
+			<textarea id="html">
+				<div id="test">sdf</div>
+	 	 </textarea>
 		</div>
 		<div class="codeContainer" id="cssContainer">
 			<span class="tittleArea">CSS</span>
-			<textarea id="css">fdadsa</textarea>
+			<textarea id="css">
+				#test{
+					background:green;
+				}
+			</textarea>
 		</div>	
 		<div class="codeContainer" id="jsContainer">
 			<span class="tittleArea">JS</span>
-			<textarea id="js">hfasdz</textarea>
+			<textarea id="js">
+				<div id="test">document.getElementById("test").innerHTML="hoal";</div>
+			</textarea>
 		</div>	
 		<div class="codeContainer" id="resultContainer">
 			<span class="tittleArea">Result</span>
-			<div id="resultContainer">
 				<iframe id="result"></iframe>
-			</div>
 		</div>		
 	</body>
 </html>

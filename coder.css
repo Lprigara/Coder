@@ -64,10 +64,6 @@ header{
 	text-shadow:  0.5px -0.8px 0.5px  #B2D135;
 }
 
-.clear{
-	clear: both;
-}
-
 .codeContainer{
 	width: 50%;
 	float: left;
@@ -78,13 +74,13 @@ header{
 	display: none;
 }
 
-.selected{
+.pressed{
 	background-color: #5E6E1F;
 }
 
-.codeContainer textarea{
+textarea{
 	margin: 0;
-	width: 100%;
+	width: 96%;
 	height: 100%;
 	resize:none;
 	border: none;
@@ -107,8 +103,4 @@ header{
 	color:#B2D135;
 	text-shadow:  0.5px -0.8px 0.5px  black;
 	font-weight: bold;
-}
-
-.resultContainer{
-	height: 100%;
 }
