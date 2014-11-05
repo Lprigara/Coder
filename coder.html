@@ -5,9 +5,10 @@
  		<meta charset="utf-8" />
  		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script languaje="Javascript" type="text/javascript" src="coder.js"></script>
 		<link rel="StyleSheet" href="coder.css" type="text/css">
+				
 	</head>
 	<body>
 		<header>					
@@ -16,14 +17,14 @@
 			</div>
 
 			<div id="runButton">
-	 				<button id="run">Run</button>	 	
+	 			<button id="run">Run</button>	 	
 			</div>
 			
 			<div id="topmenu">
 				<ul>
 					<li name="html" class="optionTopMenu pressed">HTML</li>
-					<li name="css" class="optionTopMenu">CSS</li>
-					<li name="js" class="optionTopMenu">JS</li>
+					<li name="css" class="optionTopMenu pressed">CSS</li>
+					<li name="js" class="optionTopMenu pressed">JS</li>
 					<li name="result" class="optionTopMenu pressed" style="border-right:none" >Result</li>
 				</ul>
 			</div>
@@ -33,21 +34,26 @@
 		<div class="codeContainer" id="htmlContainer">
 			<span class="tittleArea">HTML</span>
 			<textarea id="html">
-				<div id="test">sdf</div>
-	 	 </textarea>
+				<div id="circle"></div>
+	 	 	</textarea>
 		</div>
 		<div class="codeContainer" id="cssContainer">
 			<span class="tittleArea">CSS</span>
 			<textarea id="css">
-				#test{
-					background:green;
+				#circle{
+					height:140px;
+					width:140px;
+					background-color:red;
+					border-radius:70px;
 				}
 			</textarea>
 		</div>	
 		<div class="codeContainer" id="jsContainer">
 			<span class="tittleArea">JS</span>
 			<textarea id="js">
-				<div id="test">document.getElementById("test").innerHTML="hoal";</div>
+				document.getElementById("circle").onclick = function() {
+                    document.getElementById("circle").style.display="none";
+                };	
 			</textarea>
 		</div>	
 		<div class="codeContainer" id="resultContainer">

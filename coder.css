@@ -65,13 +65,9 @@ header{
 }
 
 .codeContainer{
-	width: 50%;
+	width: 25%;
 	float: left;
 	position: relative;
-}
-
-#jsContainer, #cssContainer{
-	display: none;
 }
 
 .pressed{

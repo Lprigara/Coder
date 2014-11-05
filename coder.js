@@ -5,14 +5,11 @@ function changeHeight(){
 	$(".codeContainer").css("height", windowHeight+"px");
 }
 
-function clickOptionTopMenu(){
-	
-
-}
 function init(){
 	changeHeight();
+	
 	$(".optionTopMenu").click(function(){
-		$(this).toggleClass("pressed"); //add or remove one or more classes depending the class`s presence
+		$(this).toggleClass("pressed"); 
 
 		//display in screen
 		var id=$(this).attr("name");
@@ -20,9 +17,9 @@ function init(){
 
 		var number = $('.codeContainer').filter(function() {
 	 		return $(this).css('display') !== 'none';
-		}).length;
+		});
 
-		var width=100/number;
+		var width=100/number.length;
 		$(".codeContainer").css("width",width+"%");
 	});
 
@@ -30,8 +27,9 @@ function init(){
 		var htmlCode = $("#html").val();
 		var cssCode = $("#css").val();
 		var jsCode = $("#js").val();
-		$('#result').contents().find('html').html("<style>"+cssCode+"</style>"+htmlCode);
-		document.getElementById("result").contentWindow;.eval(jsCode);
+		$('#result').contents().find('html').html("<style>"+cssCode+"</style>"+htmlCode);// + "<script>"+jsCode+"</script>");
+		//$('#result').contents().find('html').html("<script>"+jsCode+"</script>" +htmlCode );
+		document.getElementById("result").contentWindow.eval(jsCode);
 	});
 }
 
